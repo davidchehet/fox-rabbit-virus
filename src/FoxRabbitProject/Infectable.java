@@ -11,5 +11,5 @@ public interface Infectable {
 
     void getInfected();
 
-      Location spreadDisease();
+    Location spreadDisease();
 }

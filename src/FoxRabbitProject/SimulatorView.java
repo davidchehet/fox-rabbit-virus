@@ -79,21 +79,6 @@ public class SimulatorView extends JFrame
     }
 
     /**
-     * Define a color to be used for a given OBJECT of animal
-     * if theyre infected
-     * @param animal The animal OBJECT
-     * @param color The color to be used for the given class.
-
-    public static void setInfectedColor(FoxRabbitProject.Animal animal) {
-
-        if(animal instanceof FoxRabbitProject.Rabbit) animalColors.put(animal, Color.green);
-        else {
-            animalColors.put(animal, Color.CYAN);
-        }
-
-    }
-    */
-    /**
      * @return The color to be used for a given class of animal.
      */
     private Color getColor(Animal animal)
@@ -130,12 +115,8 @@ public class SimulatorView extends JFrame
                 Object animal = field.getObjectAt(row, col);
                 if(animal != null) {
                     stats.incrementCount(animal.getClass());
-                    //If this specific animal is in the Infected FoxRabbitProject.Animal map, then color it with color in that map
-                   // if(animalColors.containsKey(animal)) fieldView.drawMark(col, row, animalColors.get(animal));
-                    //If not, color it with normal color
-                   // else{
                     Animal a = (Animal) animal;
-                   fieldView.drawMark(col, row, a.getColor());
+                    fieldView.drawMark(col, row, a.getColor());
                 }
                 else {
                     fieldView.drawMark(col, row, EMPTY_COLOR);

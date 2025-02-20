@@ -21,7 +21,7 @@ public class Rabbit extends Animal implements Infectable
     // The age to which a rabbit can live.
     private static double MAX_AGE = 40.0;
     // The likelihood of a rabbit breeding.
-    private static double BREEDING_PROBABILITY = 0.12;
+    private static double BREEDING_PROBABILITY = 0.13;
     // The maximum number of births.
     private static final int MAX_LITTER_SIZE = 4;
     // A shared random number generator to control breeding.

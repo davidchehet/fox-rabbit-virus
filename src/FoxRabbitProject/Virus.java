@@ -35,7 +35,7 @@ public class Virus extends Animal {
     private static final Random rand = Randomizer.getRandom();
 
     // The likelihood of the virus mutating.
-    private static double MUTATION_PROBABILITY = 0.03;
+    private static double MUTATION_PROBABILITY = 0.022;
 
     // The maximum number of mutations.
     private static final int MAX_LITTER_SIZE = 7;
